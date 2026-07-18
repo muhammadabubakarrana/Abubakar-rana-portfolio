@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hafiz Abubakar — React Native Developer</title>
+<meta name="description" content="Hafiz Abubakar is a Senior React Native Developer based in Lahore, building and shipping production iOS and Android apps." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Ccircle cx='6' cy='9' r='3.4' fill='none' stroke='%23c98b84' stroke-width='1.6'/%3E%3Ccircle cx='20' cy='9' r='3.4' fill='none' stroke='%239c8fc9' stroke-width='1.6'/%3E%3Cline x1='9.2' y1='8' x2='16.8' y2='8' stroke='%23c9a860' stroke-width='1.2'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ===== Nav ===== -->
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="#top" class="nav__mark">
+      <svg viewBox="0 0 26 26" fill="none">
+        <circle cx="6" cy="9" r="3.4" stroke="var(--rose)" stroke-width="1.3"/>
+        <circle cx="20" cy="9" r="3.4" stroke="var(--lavender)" stroke-width="1.3"/>
+        <line x1="9.2" y1="8" x2="16.8" y2="8" stroke="var(--text-faint)" stroke-width="1"/>
+        <line x1="13" y1="8" x2="13" y2="21" stroke="var(--text-faint)" stroke-width="1"/>
+      </svg>
+      HA
+    </a>
+    <nav class="nav__links">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+    </nav>
+    <a class="nav__cta" href="#contact">Get in touch</a>
+    <button class="nav__toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="menuClose" aria-label="Close menu">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+  </button>
+  <a href="#work">Work</a>
+  <a href="#experience">Experience</a>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main id="top">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <svg class="hero__glyph" id="heroGlyph" viewBox="0 0 420 140" fill="none">
+        <g class="hero__beam" stroke-width="1.2">
+          <line x1="30" y1="64" x2="390" y2="64" stroke="var(--line-strong)"/>
+          <line x1="30" y1="64" x2="30" y2="92" stroke="var(--rose)"/>
+          <line x1="390" y1="64" x2="390" y2="92" stroke="var(--lavender)"/>
+          <circle cx="30" cy="102" r="13" stroke="var(--rose)"/>
+          <circle cx="390" cy="102" r="13" stroke="var(--lavender)"/>
+        </g>
+        <line x1="210" y1="64" x2="210" y2="122" stroke="var(--line-strong)" stroke-width="1"/>
+        <path d="M195 122 L225 122 L210 104 Z" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1"/>
+        <circle cx="210" cy="64" r="3.5" fill="var(--gold)"/>
+      </svg>
+
+      <p class="eyebrow">Lahore, Pakistan</p>
+      <h1>Hafiz Abubakar builds <em>balanced</em>, production‑grade mobile apps</h1>
+      <p class="hero__role">Senior React Native Developer</p>
+      <p class="hero__lede">Three years of taking apps from a blank Xcode project to the App Store and Play Store — native modules, in‑app purchases, ad mediation, and the unglamorous release-engineering that makes an app actually ship.</p>
+
+      <div class="hero__ctas">
+        <a href="#work" class="btn btn--primary">View my work</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat">
+          <div class="stat__num">3+</div>
+          <div class="stat__label">Years shipping</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">4</div>
+          <div class="stat__label">Published apps</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">2</div>
+          <div class="stat__label">Platforms, one codebase</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">3.77</div>
+          <div class="stat__label">CGPA, BS E‑Commerce</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <p class="eyebrow">About</p>
+        <h2>Native tools, one React layer.</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>I'm a <strong>Senior React Native Developer</strong> currently building at <strong>Brilliant Gamez</strong>, where I take apps through full release cycles — Xcode and Android Studio builds, provisioning profiles, signing certificates, and Gradle configuration included.</p>
+          <p>Most of my recent work sits at the boundary between the React layer and the native one: bridging custom Objective‑C and Java modules, wiring up Adapty for subscriptions, and getting AppLovin MAX and AdMob mediation to behave. I've also integrated AI/LLM features that stream responses inside a mobile UI, which comes with its own set of edge cases.</p>
+          <p>Before that, at <strong>CODENAX</strong> and <strong>Balawal IT House</strong>, I worked across Firebase‑backed products — auth, Firestore, social login, analytics, crash reporting — and shipped four‑plus production apps with reusable component libraries built to accelerate the whole team, not just my own tickets.</p>
+        </div>
+        <dl class="facts reveal">
+          <div>
+            <dt>Based in</dt>
+            <dd>Lahore, Pakistan</dd>
+          </div>
+          <div>
+            <dt>Currently</dt>
+            <dd>Senior React Native Developer, Brilliant Gamez</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>Native modules · IAP &amp; monetisation · Release engineering</dd>
+          </div>
+          <div>
+            <dt>Education</dt>
+            <dd>BS Electronic‑Commerce, University of the Punjab</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider reveal" aria-hidden="true">
+    <svg viewBox="0 0 64 20" fill="none">
+      <line x1="2" y1="10" x2="24" y2="10" stroke="var(--line-strong)"/>
+      <line x1="40" y1="10" x2="62" y2="10" stroke="var(--line-strong)"/>
+      <circle cx="32" cy="10" r="4" fill="none" stroke="var(--gold)" stroke-width="1"/>
+    </svg>
+  </div>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <p class="eyebrow">Skill set</p>
+        <h2>What I actually work with day to day.</h2>
+      </div>
+      <div class="skills__grid">
+        <div class="skill-card reveal">
+          <div class="skill-card__head"><span class="skill-card__dot"></span><h3>Core &amp; native</h3></div>
+          <div class="skill-card__tags">
+            <span class="tag">React Native CLI</span>
+            <span class="tag">Expo</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Xcode</span>
+            <span class="tag">Android Studio</span>
+            <span class="tag">Gradle</span>
+            <span class="tag">Custom native modules</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__head"><span class="skill-card__dot"></span><h3>State &amp; data</h3></div>
+          <div class="skill-card__tags">
+            <span class="tag">Redux Toolkit</span>
+            <span class="tag">Redux Persist</span>
+            <span class="tag">Context API</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__head"><span class="skill-card__dot"></span><h3>Integrations &amp; monetisation</h3></div>
+          <div class="skill-card__tags">
+            <span class="tag">Adapty IAP</span>
+            <span class="tag">AppLovin MAX</span>
+            <span class="tag">Google AdMob</span>
+            <span class="tag">Google Maps &amp; Places</span>
+            <span class="tag">Deep linking</span>
+            <span class="tag">Push notifications</span>
+            <span class="tag">NFC</span>
+            <span class="tag">AI / LLM APIs</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__head"><span class="skill-card__dot"></span><h3>Tooling &amp; delivery</h3></div>
+          <div class="skill-card__tags">
+            <span class="tag">App Store Connect</span>
+            <span class="tag">Play Console</span>
+            <span class="tag">Fastlane</span>
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">Sentry</span>
+            <span class="tag">i18n</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Three roles, one steady climb toward shipping.</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-item__date">Feb 2026 — Present</div>
+          <div class="tl-item__rail"><span class="tl-item__dot"></span><span class="tl-item__line"></span></div>
+          <div class="tl-item__content">
+            <h3>Senior React Native Developer <span class="role-co">· Brilliant Gamez</span></h3>
+            <ul>
+              <li>Develop and publish mobile applications end‑to‑end on the App Store and Play Console in rapid release cycles.</li>
+              <li>Integrate in‑app purchase flows with the Adapty SDK — subscription tiers, purchase validation, paywall logic.</li>
+              <li>Build and maintain custom native modules in Objective‑C / Java to bridge platform‑specific functionality.</li>
+              <li>Manage production builds from Xcode and Android Studio — provisioning profiles, signing certs, Gradle config.</li>
+              <li>Integrate AI/LLM features with third‑party APIs, handling asynchronous streaming responses.</li>
+              <li>Implement ad monetisation with AppLovin MAX and Google AdMob — banner, interstitial, rewarded units with mediation.</li>
+              <li>Manage deep linking (Universal Links &amp; App Links) and permission flows for camera, location, and notifications.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-item__date">2025 — Feb 2026</div>
+          <div class="tl-item__rail"><span class="tl-item__dot"></span><span class="tl-item__line"></span></div>
+          <div class="tl-item__content">
+            <h3>React Native Developer <span class="role-co">· CODENAX</span></h3>
+            <ul>
+              <li>Developed scalable React Native applications with clean, modular architecture across multiple client products.</li>
+              <li>Integrated REST APIs and Firebase for real‑time sync, secure auth flows, and Firestore data management.</li>
+              <li>Implemented social login (Google, Apple, Facebook) and role‑based access control for secure onboarding.</li>
+              <li>Built transactional email features — templates, triggers, and delivery‑confirmation flows.</li>
+              <li>Integrated Firebase Analytics and Sentry for event tracking, crash reporting, and performance monitoring.</li>
+              <li>Implemented push notifications, form validation, and deep‑linked navigation across user journeys.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-item__date">2024 — 2025</div>
+          <div class="tl-item__rail"><span class="tl-item__dot"></span></div>
+          <div class="tl-item__content">
+            <h3>React Native Developer <span class="role-co">· Balawal IT House</span></h3>
+            <ul>
+              <li>Built four‑plus full‑featured production applications using React Native, Firebase, and Redux Toolkit.</li>
+              <li>Implemented Firebase Auth, Firestore, Cloud Storage, and Google Maps &amp; Places API across multiple projects.</li>
+              <li>Delivered production‑ready APKs and demo packages for client feedback and internal QA cycles.</li>
+              <li>Designed reusable component libraries and standardised state‑management patterns to speed up the team.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider reveal" aria-hidden="true">
+    <svg viewBox="0 0 64 20" fill="none">
+      <line x1="2" y1="10" x2="24" y2="10" stroke="var(--line-strong)"/>
+      <line x1="40" y1="10" x2="62" y2="10" stroke="var(--line-strong)"/>
+      <circle cx="32" cy="10" r="4" fill="none" stroke="var(--gold)" stroke-width="1"/>
+    </svg>
+  </div>
+
+  <!-- ===== Projects ===== -->
+  <section id="work">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Four apps, live on both stores.</h2>
+      </div>
+
+      <div class="projects__grid">
+
+        <div class="project-card reveal">
+          <div class="project-card__top">
+            <div>
+              <h3>FloraTrack</h3>
+              <p class="project-card__tagline">Period &amp; ovulation tracker</p>
+            </div>
+            <div class="project-card__icon">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="2" width="12" height="20" rx="3"/><line x1="10" y1="6" x2="14" y2="6"/></svg>
+            </div>
+          </div>
+          <p class="desc">A production women's‑health app with subscription management via Adapty, published for both iOS and Android with full native release configuration.</p>
+          <div class="project-card__tags">
+            <span class="tag">React Native CLI</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Adapty IAP</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://apps.apple.com/pk/app/floratrack-period-tracking/id6778784712" target="_blank" rel="noopener">App Store <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
+            <a href="https://play.google.com/store/apps/details?id=com.periodtracker.ovulationcycle.pregnancycalender" target="_blank" rel="noopener">Google Play <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card__top">
+            <div>
+              <h3>SmartPaw</h3>
+              <p class="project-card__tagline">Dog &amp; puppy trainer</p>
+            </div>
+            <div class="project-card__icon">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="2" width="12" height="20" rx="3"/><line x1="10" y1="6" x2="14" y2="6"/></svg>
+            </div>
+          </div>
+          <p class="desc">Training programs, behavioural guidance, and pet‑care resources, with AI‑powered assistance built into structured training modules.</p>
+          <div class="project-card__tags">
+            <span class="tag">React Native CLI</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">AI APIs</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://apps.apple.com/us/app/smartpaw-dog-puppy-trainer/id6762183539" target="_blank" rel="noopener">App Store <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
+            <a href="https://play.google.com/store/apps/details?id=com.smartpaw.dog.training.pet.train" target="_blank" rel="noopener">Google Play <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card__top">
+            <div>
+              <h3>Portable Toilet Management</h3>
+              <p class="project-card__tagline">Driver‑facing field ops app</p>
+            </div>
+            <div class="project-card__icon">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.3"/></svg>
+            </div>
+          </div>
+          <p class="desc">Full German and English localisation, NFC‑based asset tracking for scanning equipment on site, and Google Maps routing for dispatch.</p>
+          <div class="project-card__tags">
+            <span class="tag">REST APIs</span>
+            <span class="tag">NFC</span>
+            <span class="tag">i18n</span>
+            <span class="tag">Google Maps</span>
+          </div>
+          <div class="project-card__links">
+            <span class="text-muted" style="font-size:0.85rem;">Private client release</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card__top">
+            <div>
+              <h3>Fuse</h3>
+              <p class="project-card__tagline">Role‑based dating application</p>
+            </div>
+            <div class="project-card__icon">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="3.2"/><circle cx="16" cy="15" r="3.2"/><line x1="11.3" y1="11.3" x2="13.7" y2="12.7"/></svg>
+            </div>
+          </div>
+          <p class="desc">A dual‑role app for matchmaker and dater, with Firebase Auth, Firestore, real‑time chat, and match workflows triggered through Cloud Functions.</p>
+          <div class="project-card__tags">
+            <span class="tag">Firebase</span>
+            <span class="tag">Redux Toolkit</span>
+            <span class="tag">Cloud Functions</span>
+          </div>
+          <div class="project-card__links">
+            <span class="text-muted" style="font-size:0.85rem;">Private client release</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider reveal" aria-hidden="true">
+    <svg viewBox="0 0 64 20" fill="none">
+      <line x1="2" y1="10" x2="24" y2="10" stroke="var(--line-strong)"/>
+      <line x1="40" y1="10" x2="62" y2="10" stroke="var(--line-strong)"/>
+      <circle cx="32" cy="10" r="4" fill="none" stroke="var(--gold)" stroke-width="1"/>
+    </svg>
+  </div>
+
+  <!-- ===== Education ===== -->
+  <section id="education">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <p class="eyebrow">Education</p>
+        <h2>Where the foundations came from.</h2>
+      </div>
+      <div class="edu-card reveal">
+        <div>
+          <h3>BS Electronic‑Commerce</h3>
+          <p class="text-muted">University of the Punjab — Computer Science · Marketing · Business · 2021–2025</p>
+        </div>
+        <div class="edu-card__gpa">
+          <div class="num">3.77</div>
+          <div class="lbl">CGPA / 4.0</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="contact">
+    <div class="wrap contact__inner reveal">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Have an app that needs to ship?</h2>
+      <p class="hero__lede">I'm open to new roles and contract work — native modules, monetisation, or getting a build unstuck on release day.</p>
+      <div class="contact__links">
+        <a href="mailto:abubakarranaji1@gmail.com" class="btn btn--primary">abubakarranaji1@gmail.com</a>
+        <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn--ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span>© 2026 Hafiz Abubakar</span>
+    <svg viewBox="0 0 26 26" fill="none">
+      <circle cx="6" cy="9" r="3.4" stroke="var(--rose)" stroke-width="1.3"/>
+      <circle cx="20" cy="9" r="3.4" stroke="var(--lavender)" stroke-width="1.3"/>
+      <line x1="9.2" y1="8" x2="16.8" y2="8" stroke="var(--text-faint)" stroke-width="1"/>
+    </svg>
+    <span>Lahore, Pakistan</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
